@@ -29,6 +29,9 @@ export default {
         },
         getRowCount (users) {
             return users.length
+        },
+        getUsers (){
+            this.users = this.$axios.$get('/users')
         }
     },
     data() {
@@ -63,6 +66,9 @@ export default {
             perPage: 5,
             totalRows: 0
         }
+    },
+    mounted() {
+        this.getUsers()
     },
 }
 </script>

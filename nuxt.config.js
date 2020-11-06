@@ -15,11 +15,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Nuxt CoreUI',
+    title: 'Strig',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Unofficial Nuxt + CoreUI project, free to use boilerplate for every need.' }
+      { hid: 'description', name: 'description', content: 'Strig, sistema completo de gestão de contas' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -74,7 +74,7 @@ module.exports = {
   ** Axios module configuration
   */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'http://localhost:8000/api'
   },
 
   /*
